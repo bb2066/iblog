@@ -1,0 +1,29 @@
+{%extends 'base.html'%}
+{% block title %}JMD ROCKKS!!{% endblock title %}
+
+{% block content %}
+
+
+
+
+{%for p in posts  %}
+<div class="container">
+    <div class="containerz">
+        <div class="img">
+        <img src="/media/{{p.images}}" style="height: 120px; width: 200px; border-radius: 40%;">
+    </div>
+    
+    <div class="imgs">
+        <h1 class="title">{{p.title}}</h1>
+        <p class="card-text">{{p.description |truncatewords:50| safe}}</p>
+        <div class="container">
+        <button class="btn btn-success">Read more...<a href="#"></a></button>
+    </div>
+<br><br>
+    </div>
+    
+</div>
+</div>
+    
+   {% endfor  %}
+  {% endblock content %}

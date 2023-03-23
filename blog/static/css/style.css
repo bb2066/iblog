@@ -1,0 +1,8 @@
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+.containerz{
+    display: flex;
+    justify-content: space-evenly;
+}
